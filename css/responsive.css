@@ -1,0 +1,942 @@
+/* extra small device */
+@media (min-width: 320px) and (max-width: 575px) {
+/* ==================================================
+                    nav part start
+===================================================== */
+.navbar{
+    background: #000;
+}
+
+nav button span{
+    border: 1px solid white;
+}
+nav button span i{
+    color: white !important;
+    font-size: 16px !important;
+}
+nav button span:hover{
+    background: white !important;
+}
+nav button span:hover i{
+    color: #744fa0 !important;
+}
+/* ==================================================
+                    nav part end
+===================================================== */
+/* ==================================================
+                    banner part start
+===================================================== */
+#banner-slider .overlay .home a i {
+	display: none;
+}
+#banner-slider .slick-dots {
+    bottom: 0;
+    right: 55%;
+    top: auto;
+    transform: translateX(50%);
+}
+
+#banner-slider .slick-dots li{
+    display: inline-block;
+    margin-left: 10px;
+}
+#banner-slider .banner .overlay{
+    padding-top: 50px !important;
+}
+#banner-slider .banner .overlay .overlay_details h1 {
+	font-size: 45px;
+    padding-top: 110px;
+}
+#banner-slider .banner .overlay .overlay_details h3 {
+    font-size: 18px;
+}
+#banner-slider .overlay .overlay_details p {
+	font-weight: 600;
+	font-size: 14px;
+}
+#banner-slider .banner .overlay .overlay_details a span {
+	padding-bottom: 0px;
+}
+#banner-slider .overlay .overlay_details .a2 {
+	padding-right: 28px;
+}
+/* ==================================================
+                    banner part end
+===================================================== */
+
+/* ==================================================
+                    about part start
+===================================================== */
+#about_part .about_text .about_p p {
+	padding: 0 !important;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #777;
+	line-height: 26px;
+	text-align: center;
+	width: 100%;
+}
+#about_part .about_img{
+    text-align: center;
+}
+#about_part .about_img img {
+	width: 80%;
+}
+/* ==================================================
+                    about part end
+===================================================== */
+/* ==================================================
+                    features part start
+===================================================== */
+#features_part .features_items .buttons span{
+    display: none;
+}
+#features_part .features_items .buttons p{
+    display: none;
+}
+#features_part .features_items .buttons::after{
+    width: 0;
+}
+#features_part .features_items .buttons:hover::after{
+    width: 0;
+}
+#features_part .features_items .active::after{
+    width: 0 !important;
+}
+#features_part .features_items .buttons {
+	margin-bottom: 40px;
+    padding-left: 43px !important;
+}
+#features_part .features_items .flex-column {
+	flex-direction: row !important;
+}
+#features_part .features_items .item_2 img {
+	margin-top: 30px;
+    width: 60%;
+}
+#features_part .features_items .item_3 {
+	text-align: center;
+	margin-top: 40px;
+}
+#features_part .features_items .item_3 p {
+	width: 100%;
+}
+/* ==================================================
+                    features part end
+===================================================== */
+/* ==================================================
+                    screenshots part start
+===================================================== */
+#screenshot_part .screenshot_slider .image img {
+	max-width: 80%;
+}
+#screenshot_part .screenshot_slider .image{
+    text-align: center;
+}
+ol, ul {
+	padding-left: 0;
+}
+/* ==================================================
+                    screenshots part end
+===================================================== */
+
+/* ==================================================
+                    video part start
+===================================================== */
+#video_part .play_video .overlay i{
+    font-size: 80px;
+    padding: 150px 0;
+    color: #fff;
+    background: transparent;
+    transition: .4s;
+    cursor: pointer;
+}
+#video_part{
+    margin: 50px 0;
+}
+/* ==================================================
+                    video part end
+===================================================== */
+/* ==================================================
+                    price part start
+===================================================== */
+#price_part .price_items .item {
+	margin-bottom: 35px;
+}
+/* ==================================================
+                    price part end
+===================================================== */
+
+/* ==================================================
+                    team part start
+===================================================== */
+
+#team_part .team_members .member:hover .member_details {
+	top: 80%;
+}
+#team_part .team_members .member .member_details{
+	padding: 0;
+}
+#team_part .team_members .member .member_details h3 {
+	padding: 0;
+}
+#team_part .team_members .member .member_details p {
+	padding: 0 15px;
+}
+#team_part{
+    margin: 50px 0;
+}
+/* ==================================================
+                    team part end
+===================================================== */
+
+/* ==================================================
+                    feedback part start
+===================================================== */
+#feedback_part .feedback .feedback_overlay .feedback_img{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details {
+	width: 90%;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .text p {
+	color: #777;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 500;
+	padding: 0 10px;
+	line-height: 24px;
+	width: 100%;
+	margin-left: 0px;
+}
+/* ==================================================
+                    feedback part end
+===================================================== */
+/* ==================================================
+                    form part start
+===================================================== */
+#form_part .contact form .top {
+	display: block;
+}
+#form_part .contact form .top input {
+	width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+/* ==================================================
+                    form part end
+===================================================== */
+/* ==================================================
+                    footer part start
+===================================================== */
+footer .footer_media i {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #f1f1f1;
+	text-align: center;
+	line-height: 50px;
+	color: #353535;
+	font-size: 22px;
+	margin: 0 1px;
+}
+/* ==================================================
+                    footer part end
+===================================================== */
+
+}
+
+
+/* small device */
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* ==================================================
+                        nav part start
+    ===================================================== */
+    .navbar{
+        background: #000;
+    }
+    nav button span{
+        border: 1px solid white;
+    }
+    nav button span i{
+        color: white !important;
+        font-size: 16px !important;
+    }
+    nav button span:hover{
+        background: white !important;
+    }
+    nav button span:hover i{
+        color: #744fa0 !important;
+    }
+    /* ==================================================
+                        nav part end
+    ===================================================== */
+    /* ==================================================
+                        banner part start
+    ===================================================== */
+    #banner-slider .overlay .home a i {
+        display: none;
+    }
+    #banner-slider .slick-dots {
+        bottom: 0;
+        right: 50%;
+        top: auto;
+        transform: translateX(50%);
+    }
+    
+    #banner-slider .slick-dots li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #banner-slider .banner .overlay{
+        padding-top: 50px !important;
+    }
+    #banner-slider .banner .overlay .overlay_details h1 {
+        font-size: 45px;
+        padding-top: 110px;
+    }
+    #banner-slider .banner .overlay .overlay_details h3 {
+        font-size: 18px;
+    }
+    #banner-slider .overlay .overlay_details p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    #banner-slider .banner .overlay .overlay_details a span {
+        padding-bottom: 0px;
+    }
+    #banner-slider .overlay .overlay_details .a2 {
+        padding-right: 28px;
+    }
+    /* ==================================================
+                        banner part end
+    ===================================================== */
+    
+    /* ==================================================
+                        about part start
+    ===================================================== */
+    #about_part .about_text .about_p p {
+        padding: 0 !important;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #777;
+        line-height: 26px;
+        text-align: center;
+        width: 100%;
+    }
+    #about_part .about_img{
+        text-align: center;
+    }
+    #about_part .about_img img {
+        width: auto;
+    }
+    /* ==================================================
+                        about part end
+    ===================================================== */
+    /* ==================================================
+                        features part start
+    ===================================================== */
+    #features_part .features_items .buttons span{
+        display: none;
+    }
+    #features_part .features_items .buttons p{
+        display: none;
+    }
+    #features_part .features_items .buttons::after{
+        width: 0;
+    }
+    #features_part .features_items .buttons:hover::after{
+        width: 0;
+    }
+    #features_part .features_items .active::after{
+        width: 0 !important;
+    }
+    #features_part .features_items .buttons {
+        padding-left: 86px;
+    }
+    #features_part .features_items .item_2 img {
+        width: 60%;
+    }
+    #features_part .features_items .item_3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #features_part .features_items .item_3 h3 {
+        margin-bottom: 10px;
+    }
+    #features_part .features_items .item_3 p {
+        width: 100%;
+    }
+    /* ==================================================
+                        features part end
+    ===================================================== */
+    /* ==================================================
+                        screenshots part start
+    ===================================================== */
+    #screenshot_part .screenshot_slider .image img {
+        max-width: 80%;
+    }
+    #screenshot_part .screenshot_slider .image{
+        text-align: center;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    /* ==================================================
+                        screenshots part end
+    ===================================================== */
+    
+    /* ==================================================
+                        video part start
+    ===================================================== */
+    #video_part .play_video .overlay i{
+        font-size: 80px;
+        padding: 150px 0;
+        color: #fff;
+        background: transparent;
+        transition: .4s;
+        cursor: pointer;
+    }
+    #video_part{
+        margin: 50px 0;
+    }
+    /* ==================================================
+                        video part end
+    ===================================================== */
+    /* ==================================================
+                        price part start
+    ===================================================== */
+    #price_part .price_items .item {
+        margin-bottom: 35px;
+    }
+    /* ==================================================
+                        price part end
+    ===================================================== */
+    
+    /* ==================================================
+                        team part start
+    ===================================================== */
+    #team_part .team_members .member:hover .member_details {
+        top: 80%;
+    }
+    
+    #team_part .team_members .member .member_details{
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details h3 {
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details p {
+        padding: 0 15px;
+    }
+    #team_part{
+        margin: 50px 0;
+    }
+    #team_part .team_members .member {
+        margin: 80px 5px 160px 5px;
+    }
+    /* ==================================================
+                        team part end
+    ===================================================== */
+    
+    /* ==================================================
+                        feedback part start
+    ===================================================== */
+    #feedback_part .feedback .feedback_overlay .feedback_img{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details {
+        width: 90%;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details .text p {
+        color: #777;
+        font-size: 16px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        padding: 0 10px;
+        line-height: 24px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    /* ==================================================
+                        feedback part end
+    ===================================================== */
+    /* ==================================================
+                        form part start
+    ===================================================== */
+    #form_part .contact form .top {
+        display: block;
+    }
+    #form_part .contact form .top input {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+    /* ==================================================
+                        form part end
+    ===================================================== */
+    /* ==================================================
+                        footer part start
+    ===================================================== */
+    footer .footer_media i {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        text-align: center;
+        line-height: 50px;
+        color: #353535;
+        font-size: 22px;
+        margin: 0 1px;
+    }
+    /* ==================================================
+                        footer part end
+    ===================================================== */
+    
+    }
+
+
+/* medium device */
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* ==================================================
+                        nav part start
+    ===================================================== */
+    .navbar{
+        background: #000;
+    }
+    nav button span{
+        border: 1px solid white;
+    }
+    nav button span i{
+        color: white !important;
+        font-size: 16px !important;
+    }
+    nav button span:hover{
+        background: white !important;
+    }
+    nav button span:hover i{
+        color: #744fa0 !important;
+    }
+    /* ==================================================
+                        nav part end
+    ===================================================== */
+    /* ==================================================
+                        banner part start
+    ===================================================== */
+    #banner-slider .overlay .home a i {
+        display: none;
+    }
+    #banner-slider .slick-dots {
+        bottom: 0;
+        right: 50%;
+        top: auto;
+        transform: translateX(50%);
+    }
+    
+    #banner-slider .slick-dots li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #banner-slider .banner .overlay{
+        padding-top: 50px !important;
+    }
+    #banner-slider .banner .overlay .overlay_details h3 {
+        font-size: 30px;
+    }
+    #banner-slider .banner .overlay .overlay_details a span {
+        padding-bottom: 0px;
+    }
+    #banner-slider .overlay .overlay_details .a2 {
+        padding-right: 28px;
+    }
+    #banner-slider .banner .overlay .overlay_details h1 {
+        padding-top: 60px;
+    }
+    /* ==================================================
+                        banner part end
+    ===================================================== */
+    
+    /* ==================================================
+                        about part start
+    ===================================================== */
+    #about_part .about_text .about_p p {
+        padding: 0 !important;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #777;
+        line-height: 26px;
+        text-align: center;
+        width: 100%;
+    }
+    #about_part .about_img{
+        text-align: center;
+    }
+    #about_part .about_img img {
+        width: auto;
+    }
+    /* ==================================================
+                        about part end
+    ===================================================== */
+    /* ==================================================
+                        features part start
+    ===================================================== */
+    #features_part .features_items .buttons span{
+        display: none;
+    }
+    #features_part .features_items .buttons p{
+        display: none;
+    }
+    #features_part .features_items .buttons::after{
+        width: 0;
+    }
+    #features_part .features_items .buttons:hover::after{
+        width: 0;
+    }
+    #features_part .features_items .active::after{
+        width: 0 !important;
+    }
+    #features_part .features_items .buttons {
+        padding-left: 86px;
+    }
+    #features_part .features_items .item_2 img {
+        width: auto;
+    }
+    #features_part .features_items .item_3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #features_part .features_items .item_3 h3 {
+        margin-bottom: 10px;
+    }
+    #features_part .features_items .item_3 p {
+        width: 100%;
+    }
+    /* ==================================================
+                        features part end
+    ===================================================== */
+    /* ==================================================
+                        screenshots part start
+    ===================================================== */
+    #screenshot_part .screenshot_slider .image img {
+        max-width: 80%;
+    }
+    #screenshot_part .screenshot_slider .image{
+        text-align: center;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    /* ==================================================
+                        screenshots part end
+    ===================================================== */
+    
+    /* ==================================================
+                        video part start
+    ===================================================== */
+    #video_part .play_video .overlay i{
+        font-size: 80px;
+        padding: 150px 0;
+        color: #fff;
+        background: transparent;
+        transition: .4s;
+        cursor: pointer;
+    }
+    #video_part{
+        margin: 50px 0;
+    }
+    /* ==================================================
+                        video part end
+    ===================================================== */
+    /* ==================================================
+                        price part start
+    ===================================================== */
+    #price_part .price_items .item {
+        margin-bottom: 35px;
+    }
+    /* ==================================================
+                        price part end
+    ===================================================== */
+    
+    /* ==================================================
+                        team part start
+    ===================================================== */
+    #team_part .team_members .member:hover .member_details {
+        top: 80%;
+    }
+    
+    #team_part .team_members .member .member_details{
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details h3 {
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details p {
+        padding: 0 15px;
+    }
+    #team_part{
+        margin: 50px 0;
+    }
+    #team_part .team_members .member {
+        margin: 80px 5px 160px 5px;
+    }
+    #team_part .team_members .member .member_details h2 {
+        padding-top: 31px;
+    }
+    /* ==================================================
+                        team part end
+    ===================================================== */
+    
+    /* ==================================================
+                        feedback part start
+    ===================================================== */
+    #feedback_part .feedback .feedback_overlay .feedback_img{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details {
+        width: 90%;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details .text p {
+        color: #777;
+        font-size: 16px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        padding: 0 10px;
+        line-height: 24px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    /* ==================================================
+                        feedback part end
+    ===================================================== */
+    /* ==================================================
+                        form part start
+    ===================================================== */
+    #form_part .contact form .top {
+        display: block;
+    }
+    #form_part .contact form .top input {
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+    /* ==================================================
+                        form part end
+    ===================================================== */
+    /* ==================================================
+                        footer part start
+    ===================================================== */
+    footer .footer_media i {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        text-align: center;
+        line-height: 50px;
+        color: #353535;
+        font-size: 22px;
+        margin: 0 1px;
+    }
+    /* ==================================================
+                        footer part end
+    ===================================================== */
+    
+    }
+
+
+/* large device */
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* ==================================================
+                        nav part start
+    ===================================================== */
+    nav button span{
+        border: 1px solid white;
+    }
+    nav button span i{
+        color: white !important;
+        font-size: 16px !important;
+    }
+    nav button span:hover{
+        background: white !important;
+    }
+    nav button span:hover i{
+        color: #744fa0 !important;
+    }
+    .navbar ul li {
+        margin-left: 0;
+    }
+    #banner-slider .overlay .home a i {
+        right: 3%;
+    }
+    /* ==================================================
+                        nav part end
+    ===================================================== */
+    /* ==================================================
+                        banner part start
+    ===================================================== */
+    #banner-part .overlay_details{
+        padding-right: 55px;
+    }
+    /* ==================================================
+                        banner part end
+    ===================================================== */
+    
+    /* ==================================================
+                        about part start
+    ===================================================== */
+    #about_part .about_text .about_p p {
+        padding: 0 !important;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: #777;
+        line-height: 26px;
+        text-align: center;
+        width: 100%;
+    }
+    #about_part .about_img{
+        text-align: center;
+    }
+    #about_part .about_img img {
+        width: 100%;
+    }
+    /* ==================================================
+                        about part end
+    ===================================================== */
+    /* ==================================================
+                        features part start
+    ===================================================== */
+    #features_part .features_items .item_2 img {
+        width: 80%;
+    }
+    #features_part .features_items .item_3 p {
+        width: 100%;
+    }
+    #features_part .features_items .buttons {
+        margin-bottom: 20px;
+    }
+    #features_part .features_items .buttons::after {
+        bottom: 0px;
+    }
+    /* ==================================================
+                        features part end
+    ===================================================== */
+    /* ==================================================
+                        screenshots part start
+    ===================================================== */
+    #screenshot_part .screenshot_slider .image img {
+        max-width: 80%;
+    }
+    #screenshot_part .screenshot_slider .image{
+        text-align: center;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    /* ==================================================
+                        screenshots part end
+    ===================================================== */
+    
+    /* ==================================================
+                        video part start
+    ===================================================== */
+    #video_part .play_video .overlay i{
+        font-size: 80px;
+        padding: 150px 0;
+        color: #fff;
+        background: transparent;
+        transition: .4s;
+        cursor: pointer;
+    }
+    #video_part{
+        margin: 50px 0;
+    }
+    /* ==================================================
+                        video part end
+    ===================================================== */
+    /* ==================================================
+                        price part start
+    ===================================================== */
+    #price_part .price_items .item {
+        margin-bottom: 35px;
+    }
+    /* ==================================================
+                        price part end
+    ===================================================== */
+    
+    /* ==================================================
+                        team part start
+    ===================================================== */
+    #team_part .team_members .member:hover .member_details {
+        top: 80%;
+    }
+    
+    #team_part .team_members .member .member_details{
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details h3 {
+        padding: 0;
+    }
+    #team_part .team_members .member .member_details p {
+        padding: 0 15px;
+    }
+    #team_part{
+        margin: 50px 0;
+    }
+    #team_part .team_members .member {
+        margin: 80px 5px 160px 5px;
+    }
+    #team_part .team_members .member .member_details h2 {
+        padding-top: 31px;
+    }
+    #team_part .slick-dots{
+        display: none !important;
+    }
+    /* ==================================================
+                        team part end
+    ===================================================== */
+    
+    /* ==================================================
+                        feedback part start
+    ===================================================== */
+    #feedback_part .feedback .feedback_overlay .feedback_img{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details {
+        width: 90%;
+    }
+    #feedback_part .feedback .feedback_overlay .feedback_details .text p {
+        color: #777;
+        font-size: 16px;
+        font-family: 'Open sans', sans-serif;
+        font-weight: 500;
+        padding: 0 10px;
+        line-height: 24px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .feedback_details .slick-dots{
+        display: none !important;
+    }
+    /* ==================================================
+                        feedback part end
+    ===================================================== */
+    
+    }
+    
+

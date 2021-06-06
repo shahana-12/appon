@@ -1,0 +1,948 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.title h2{
+    color: #353535;
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.title img{
+    max-width: 100%;
+}
+
+/* ==================================================
+                    nav part start
+===================================================== */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    transition: .4s;
+}
+.navbar ul li{
+    position: relative;
+    margin-left: 20px;
+}
+.navbar li::after{
+    position: absolute;
+    background: #744fa0;
+    bottom: 0px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    content: "";
+}
+.navbar ul li:hover::after{
+    width: 20px;
+}
+.navbar ul li a{
+    color: white !important;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    transition: .4s;
+}
+.navbar ul li a:hover , .active{
+    color: #744fa0 !important;
+}
+nav .button a{
+    padding: 7px 22px;
+    background: #744fa0;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+    line-height: 95px;
+    transition: .4s;
+}
+nav .button a:hover{
+    color: #744fa0;
+    background: white;
+}
+.sticky{
+    background: #000;
+    position: fixed;
+    width: 100%;
+}
+/* ==================================================
+                    nav part end
+===================================================== */
+
+/* ==================================================
+                    banner part start
+===================================================== */
+#banner-slider .banner{
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-slider .banner2{
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-slider .banner3{
+    background: url(../images/banner3.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-slider .banner .overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    text-align: right;
+    padding:100px 0;
+    padding-top: 200px;
+}
+#banner-slider .banner .overlay .overlay_details h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 56px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+#banner-slider .banner .overlay .overlay_details h1::first-letter{
+    color: #744fa0;
+}
+#banner-slider .banner .overlay .overlay_details h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 34px;
+    padding: 20px 0 25px 0;
+    position: relative;
+    text-transform: capitalize;
+    position: relative;
+}
+#banner-slider .banner .overlay .overlay_details h3::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background: #f1f1f1;
+}
+
+#banner-slider .overlay .overlay_details p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-size: 16px;
+    padding: 28px 0 50px 0;
+    max-width: 565px;
+    line-height: 26px;
+    margin-left: auto;
+}
+#banner-slider .overlay .overlay_details a{
+    display: inline-block;
+	background: #744fa0;
+	color: #fff;
+	position: relative;
+	padding: 10px 20px;
+	padding-left: 62px;
+    text-align: left;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 8px;
+    transition: .4s;
+    margin-top: 18px;
+}
+#banner-slider .overlay .overlay_details a:hover{
+    background: white;
+	color: #353535;
+}
+#banner-slider .overlay .overlay_details .a2{
+    background: white;
+    color: #353535;
+    transition: .4s;
+}
+#banner-slider .overlay .overlay_details .a2:hover{
+    background: #744fa0;
+    color: white;
+}
+#banner-slider .overlay .overlay_details a i{
+    font-size: 38px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    float: left;
+}
+#banner-slider .banner .overlay .overlay_details a span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    display: block;
+}
+#banner-slider .overlay .home a i{
+    position: absolute;
+    top: calc(54% - 48px);
+    right: 2%;
+    color: #fff;
+    z-index: 999;
+    font-size: 20px;
+    transform: translateY(-50%);
+} 
+#banner-slider .overlay .home a i:hover{
+    color: #744fa0;
+}
+#banner-slider .slick-dots {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%);
+}
+#banner-slider .slick-dots li{
+    padding: 4px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+#banner-slider .slick-dots li button{
+    border-radius: 50%;
+    background: #744fa0;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    height: 6px;
+    width: 6px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+    opacity: 0;
+}
+#banner-slider .slick-dots .slick-active{
+    border-color: #744fa0;
+}
+#banner-slider .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+
+/* ==================================================
+                    banner part end
+===================================================== */
+
+/* ==================================================
+                    about part start
+===================================================== */
+
+#about_part{
+    margin: 100px 0;
+}
+#about_part .about_img img{
+    width: 100%;
+}
+#about_part .about_text .title{
+    text-align: center;
+}
+#about_part .about_text .about_p{
+    margin-top: 30px;
+}
+#about_part .about_text .about_p p{
+    padding: 0 100px 20px 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #777;
+    line-height: 26px;
+    text-align: center;
+    width: 850px;
+}
+/* ==================================================
+                    about part end
+===================================================== */
+/* ==================================================
+                    features part start
+===================================================== */
+#features_part{
+    background: #f1f1f1;
+    padding-top: 50px;
+}
+#features_part .title{
+    text-align: center;
+}
+#features_part .features_items{
+    margin-top: 30px;
+}
+#features_part .features_items .item_2 img{
+    width: 70%;
+}
+#features_part .features_items .item_3{
+    text-align: right;
+}
+#features_part .features_items .item_3 h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 30px;
+}
+#features_part .features_items .item_3 p{
+    color: #777;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 17px;
+    line-height: 26px;
+    width: 409px;
+}
+#features_part .features_items .buttons{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 60px;
+    color: #353535;
+    cursor: pointer;
+    transition: .4s;
+}
+#features_part .features_items .active{
+    background: none !important;
+    color: #744fa0;
+}
+#features_part .features_items .active i{
+    color: #744fa0 !important;
+}
+#features_part .features_items .active::after{
+    background: #744fa0 !important;
+    width: 90% !important;
+}
+#features_part .features_items .buttons:hover  span{
+    color: #744fa0;
+}
+#features_part .features_items .buttons:hover  p{
+    color: #744fa0;
+}
+#features_part .features_items .buttons:hover  i{
+    color: #744fa0;
+}
+#features_part .features_items .buttons::after{
+    width: 70%;
+    height: 1px;
+    background: black;
+    bottom: -32px;
+    left: 0;
+    content: "";
+    position: absolute;
+    transition: .5s;
+}
+#features_part .features_items .buttons:hover::after{
+    width: 90%;
+    background: #744fa0;
+}
+#features_part .features_items .last-cls::after{
+    width: 0 !important;
+}
+#features_part .features_items .last-cls:hover::after{
+    width: 0;
+}
+#features_part .features_items .buttons i{
+    color: #353535;
+    font-size: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#features_part .features_items .buttons span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+}
+#features_part .features_items .active span{
+    color: #744fa0 !important;
+}
+#features_part .features_items .buttons p{
+    color: #777;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+#features_part .features_items .active .appon{
+    color: #744fa0 !important;
+}
+
+/* ==================================================
+                    features part end
+===================================================== */
+
+ /* =================================================
+                screenshots part start
+===================================================== */
+#screenshot_part{
+    margin: 100px 0;
+}
+#screenshot_part .title{
+    text-align: center;
+    margin-bottom: 50px;
+} 
+#screenshot_part .screenshot_slider .image img{
+    display: inline-block;
+    width: 85%;
+}
+.screenshot_slider .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.screenshot_slider .slick-dots li{
+    display: inline-block;
+    padding: 3.5px;
+    border: 4px solid #353535;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.screenshot_slider .slick-dots li button{
+    border-radius: 50%;
+    background: #744fa0;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    height: 6px;
+    width: 6px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+    opacity: 0;
+}
+.screenshot_slider .slick-dots .slick-active{
+    border-color: #744fa0;
+}
+.screenshot_slider .slick-dots li.slick-active button {
+    opacity: 1;
+}
+
+ /* =================================================
+                screenshots part end
+===================================================== */
+
+ /* =================================================
+                video part start
+===================================================== */
+#video_part{
+    margin: 100px 0;
+}
+
+#video_part .title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#video_part .play_video{
+    background: url(../images/video_img.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#video_part .play_video .overlay{
+    background: rgb(0, 0, 0,.7);
+    text-align: center;
+}
+#video_part .play_video .overlay i{
+    font-size: 80px;
+    padding: 250px 0;
+    color: #fff;
+    background: transparent;
+    transition: .4s;
+    cursor: pointer;
+}
+#video_part .play_video .overlay i:hover{
+    color: #744fa0;
+}
+ /* =================================================
+                video part end
+===================================================== */
+
+ /* =================================================
+                price part start
+===================================================== */
+#price_part{
+    margin:100px 0;
+}
+#price_part .title{
+    text-align: center;
+}
+#price_part .price_items{
+    margin: 60px 0;
+}
+#price_part .price_items .item{
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    text-align: center;
+    transition: .4s;
+}
+#price_part .price_items .item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #353535;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #f1f1f1;
+    padding: 20px 0;
+    border-radius:20px 20px 0 0;
+}
+#price_part .price_items .item:hover h2{
+    background: #744fa0;
+    color: white;
+}
+
+#price_part .price_items .item .round{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    margin: 20px auto;
+}
+
+
+#price_part .price_items .item .round h4{
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#price_part .price_items .item .round h4 span{
+    font-size: 50px;
+}
+#price_part .price_items .item .round p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+#price_part .price_items .item .pdiv{
+    padding: 30px 0 40px;
+    background: #f1f1f1;
+    border-radius: 0 0 20px 20px;
+}
+#price_part .price_items .item .pdiv p{
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+#price_part .price_items .item .item_body{
+    position: relative;
+}
+#price_part .price_items .item .item_body a{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: absolute;
+    border: 1px solid #353535;
+    color: #555555;
+    display: inline-block;
+    border-radius: 3px;
+    height: 36px;
+    width: 94px;
+    line-height: 34px;
+    bottom: 2px;
+    top: 95%;
+    left: 39%;
+    transform: translateX(-20%);
+}
+#price_part .price_items .item:hover .item_body a{
+    background: #744fa0;
+    color: white;
+    border-color: #744fa0;
+}
+ /* =================================================
+                price part end
+===================================================== */
+
+ /* =================================================
+                team part start
+===================================================== */
+#team_part{
+    margin: 100px 0;
+}
+#team_part .title{
+    text-align: center;
+}
+#team_part .team_members .member{
+    margin-left: 33px;
+    position: relative;
+    margin: 80px 20px 160px 20px;
+}
+#team_part .team_members .member .member_img img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+#team_part .team_members .member .member_img{
+    position: relative;
+    top: 0;
+    z-index: 1;
+    transition: .4s;
+}
+#team_part .team_members .member .member_details{
+    border: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-sizing: border-box;
+}
+#team_part .team_members .member:hover .member_img{
+    top: -50px;
+}
+#team_part .team_members .member:hover .member_details{
+    top: 87%;
+    opacity: 1;
+}
+#team_part .team_members .member .member_details h2{
+    color: #353535;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+#team_part .team_members .member .member_details h3{
+    color: #999;
+    font-size: 17px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 600;
+    padding: 8px 0 10px 0;
+    text-transform: capitalize;
+}
+#team_part .team_members .member .member_details p{
+    color: #777;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    padding: 0 52px;
+    margin-bottom: 7px;
+}
+#team_part .team_members .member .member_img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+#team_part .team_members .member .member_img .overlay .icons i{
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 53px;
+    color: #353535;
+    font-size: 26px;
+    margin: 0 3px;
+    transition: all .3s;
+}
+#team_part .team_members .member .member_img .overlay .icons{
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    position: absolute;
+}
+#team_part .team_members .member .member_img .overlay .icons i:hover{
+    background: #744fa0;
+    color: #fff;
+}
+#team_part .team_members .member:hover .member_img .overlay{
+    opacity: 1;
+    border-radius: 20px 20px 0 0;
+}
+ /* =================================================
+                team part end
+===================================================== */
+
+ /* =================================================
+                feedback part start
+===================================================== */
+
+#feedback_part{
+    margin: 50px 0;
+}
+
+#feedback_part .title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#feedback_part .feedback{
+    background: url(../images/feedback_img.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#feedback_part .feedback .feedback_overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    padding: 60px 0;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details{
+    width: 62%;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .round{
+    height: 30px;
+    width: 30px;
+    background: #f1f1f1;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , 50%) rotate(45deg);
+    border-radius: 10px 0;
+}
+
+#feedback_part .feedback .feedback_overlay .feedback_details .text p{
+    color: #777;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 500;
+    padding: 0 47px;
+    line-height: 24px;
+    width: 740px;
+    margin-left: 60px;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .text .star{
+    padding-top: 25px;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .text .star i{
+    color: #744fa0;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .text h3{
+    color: #353535;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+#feedback_part .feedback .feedback_overlay .feedback_details .text h4{
+    color: #353535;
+    font-family: 'Open sans',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 4px 0;
+    text-transform: capitalize;
+}
+
+
+
+#feedback_part .feedback .feedback_overlay .feedback_img{
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#feedback_part .feedback .feedback_overlay .feedback_img .img{
+    height: 110px;
+    width: 110px;
+    margin: 10px auto;
+    position: relative;
+    border: 3px transparent;
+}
+#feedback_part .feedback .feedback_overlay .feedback_img .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+#feedback_part .feedback .feedback_overlay .feedback_img .img .img_overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+#feedback_part .feedback .feedback_overlay .feedback_img .slick-center .img .img_overlay{
+    opacity: 0;
+}
+#feedback_part .feedback .feedback_overlay .feedback_img .slick-center .img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #744fa0;
+    border-radius: 50%;
+}
+.img_slider .slick-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.img_slider .slick-dots li{
+    display: inline-block;
+    padding: 3.5px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.img_slider .slick-dots li button{
+    border-radius: 50%;
+    background: #744fa0;
+    border: 0px;
+    color: transparent;
+    padding: 0;
+    height: 6px;
+    width: 6px;
+    font-size: 1px;
+    line-height: 0;
+    margin: 0;
+    top: 0;
+    display: block;
+    opacity: 0;
+}
+.img_slider .slick-dots .slick-active{
+    border-color: #744fa0;
+}
+.img_slider .slick-dots li.slick-active button {
+    opacity: 1;
+}
+.img_slider ol, ul {
+	padding-left: 0;
+}
+ /* =================================================
+                feedback part end
+===================================================== */
+
+ /* =================================================
+                form part start
+===================================================== */
+#form_part{
+    margin-bottom: 100px;
+}
+#form_part .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#form_part .contact form{
+    text-align: center;
+}
+#form_part .contact form .top{
+    display: flex;
+    justify-content: space-between;
+}
+#form_part .contact form .top input{
+    width: 31.5%;
+    padding: 20px 15px;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#form_part .contact form .top input::placeholder{
+    color: #555555;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+#form_part .contact form .message textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    height: 200px;
+    resize: none;
+}
+#form_part .contact form .message textarea::placeholder{
+    color: #555555;
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+#form_part .contact form button{
+    border-radius: 3px;
+    padding: 6px 15px;
+    background: #744fa0;
+    color: #fefefe;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    transition: .4s;
+    cursor: pointer;
+}
+#form_part .contact form button:hover{
+    color: #744fa0;
+    background: #fefefe;
+    border: 1px solid #744fa0;
+}
+ /* =================================================
+                form part end
+===================================================== */
+
+ /* =================================================
+                footer part start
+===================================================== */
+
+footer{
+    background: #353535;
+    padding: 30px 0;
+    text-align: center;
+}
+footer .footer_media{
+    margin: 30px 0;
+}
+footer .footer_media i{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 55px;
+    color: #353535;
+    font-size: 24px;
+    margin: 0 3px;
+    transition: .4s;
+}
+footer .footer_media i:hover{
+    color: white;
+    background: #744fa0;
+}
+footer p{
+    color: #f1f1f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+footer p span{
+    color: #744fa0;
+}
+ /* =================================================
+                footer part end
+===================================================== */
